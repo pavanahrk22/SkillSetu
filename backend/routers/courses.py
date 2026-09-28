@@ -7,7 +7,6 @@ from models.course import Course
 from schemas.course import CourseResponse
 from utils.jwt_handler import get_current_user
 from services.gap_analyzer import analyze_gaps
-from services.recommendation_engine import get_recommendations
 
 router = APIRouter(prefix="/courses", tags=["Courses"])
 
@@ -15,15 +14,6 @@ router = APIRouter(prefix="/courses", tags=["Courses"])
 def list_courses(db: Session = Depends(get_db)):
     """List all courses."""
     return db.query(Course).all()
-
-@router.get("/recommendations", response_model=List[dict])
-async def recommend_courses(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
-    """AI-powered recommendations based on gaps."""
-    # Handle the difference in return type from analyze_gaps now returning SkillGapResponse
-    gap_res = await analyze_gaps(current_user.id, db)
-    # The old recommendation engine expected a list of dicts. If it isn't updated, this might crash,
-    # but the instruction only told us to add the new endpoint. Let's pass the gaps list.
-    return await get_recommendations(gap_res.gaps, db)
 
 @router.get("/recommendations/{user_id}", response_model=List[dict])
 async def get_recommendations_for_user(

@@ -7,7 +7,7 @@ from models.competency import UserCompetency
 from schemas.user import UserResponse, UserUpdate, PastTrainingCreate, PastTrainingResponse
 from utils.jwt_handler import get_current_user
 from utils.pdf_parser import extract_text_from_pdf
-from services.competency_engine import extract_competencies
+from services.competency_engine import extract_competencies_from_profile
 
 router = APIRouter(prefix="/users", tags=["Users"])
 

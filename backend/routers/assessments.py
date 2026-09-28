@@ -7,51 +7,8 @@ from models.assessment import Assessment, Question, AssessmentResult
 from schemas.assessment import AssessmentResponse, AssessmentSubmit, AssessmentResultResponse
 from utils.jwt_handler import get_current_user
 from utils.pdf_parser import extract_text_from_pdf, extract_text_from_pptx
-from services.assessment_engine import generate_mcqs
 
 router = APIRouter(prefix="/assessments", tags=["Assessments"])
-
-@router.post("/generate", response_model=AssessmentResponse)
-async def generate_assessment(
-    title: str,
-    course_id: int = None,
-    file: UploadFile = File(...),
-    current_user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    """Upload doc (PDF/PPT) -> LLM generates MCQs -> returns assessment."""
-    contents = await file.read()
-    if file.filename.endswith(".pdf"):
-        text = extract_text_from_pdf(contents)
-    elif file.filename.endswith(".pptx"):
-        text = extract_text_from_pptx(contents)
-    else:
-        raise HTTPException(status_code=400, detail="Unsupported file format")
-    
-    mcqs = await generate_mcqs(text, num_questions=5)
-    
-    assessment = Assessment(title=title, course_id=course_id, created_by=current_user.id)
-    db.add(assessment)
-    db.commit()
-    db.refresh(assessment)
-    
-    for mcq in mcqs:
-        q = Question(
-            assessment_id=assessment.id,
-            question_text=mcq["question_text"],
-            option_a=mcq["option_a"],
-            option_b=mcq["option_b"],
-            option_c=mcq["option_c"],
-            option_d=mcq["option_d"],
-            correct_option=mcq["correct_option"],
-            explanation=mcq.get("explanation"),
-            difficulty=mcq.get("difficulty")
-        )
-        db.add(q)
-    
-    db.commit()
-    db.refresh(assessment)
-    return assessment
 
 @router.get("/", response_model=List[AssessmentResponse])
 def list_assessments(db: Session = Depends(get_db)):
