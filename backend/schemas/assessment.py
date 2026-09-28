@@ -39,6 +39,29 @@ class AssessmentResponse(AssessmentBase):
     class Config:
         from_attributes = True
 
+class QuestionPublic(BaseModel):
+    id: int
+    assessment_id: int
+    question_text: str
+    option_a: str
+    option_b: str
+    option_c: str
+    option_d: str
+    difficulty: Optional[str] = None
+    competency_id: Optional[int] = None
+
+    class Config:
+        from_attributes = True
+
+class AssessmentPublic(AssessmentBase):
+    id: int
+    created_by: Optional[int] = None
+    created_at: datetime
+    questions: Optional[List[QuestionPublic]] = []
+
+    class Config:
+        from_attributes = True
+
 class AssessmentSubmit(BaseModel):
     answers: dict[int, str] # question_id -> selected_option
 

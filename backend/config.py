@@ -11,6 +11,10 @@ class Settings:
     LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "mock")
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
+    ANTHROPIC_MODEL: str = os.getenv("ANTHROPIC_MODEL", "claude-sonnet-5")
+
+if Settings.SECRET_KEY == "supersecretkey":
+    print("WARNING: Default SECRET_KEY is being used. Please set SECRET_KEY in your .env file.")
 
 def get_settings():
     return Settings()

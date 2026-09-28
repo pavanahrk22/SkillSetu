@@ -4,19 +4,24 @@ from typing import List
 from database import get_db
 from models.user import User
 from models.assessment import Assessment, Question, AssessmentResult
-from schemas.assessment import AssessmentResponse, AssessmentSubmit, AssessmentResultResponse
+from schemas.assessment import AssessmentResponse, AssessmentSubmit, AssessmentResultResponse, AssessmentPublic
 from utils.jwt_handler import get_current_user
 from utils.pdf_parser import extract_text_from_pdf, extract_text_from_pptx
 
 router = APIRouter(prefix="/assessments", tags=["Assessments"])
 
+<<<<<<< HEAD
 @router.get("/", response_model=List[AssessmentResponse])
 def list_assessments(db: Session = Depends(get_db)):
+=======
+@router.get("/", response_model=List[AssessmentPublic])
+def list_assessments(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+>>>>>>> 6036b12 (Add taxonomy, admin seed, LLM settings and security fixes (A2-A5))
     """List assessments."""
     return db.query(Assessment).all()
 
-@router.get("/{id}", response_model=AssessmentResponse)
-def get_assessment(id: int, db: Session = Depends(get_db)):
+@router.get("/{id}", response_model=AssessmentPublic)
+def get_assessment(id: int, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     """Get assessment with questions."""
     assessment = db.query(Assessment).filter(Assessment.id == id).first()
     if not assessment:

@@ -41,11 +41,15 @@ async def upload_profile_document(file: UploadFile = File(...), current_user: Us
     
     contents = await file.read()
     text = extract_text_from_pdf(contents)
+<<<<<<< HEAD
     
     # Query all Competency rows and serialize to dicts
     all_competencies = db.query(Competency).all()
     taxonomy = [{"id": c.id, "name": c.name, "domain": c.domain, "description": c.description, "level": c.level} for c in all_competencies]
     
+=======
+    taxonomy = [{"id": c.id, "name": c.name, "domain": c.domain} for c in db.query(Competency).all()]
+>>>>>>> 6036b12 (Add taxonomy, admin seed, LLM settings and security fixes (A2-A5))
     extracted = await extract_competencies_from_profile(text, taxonomy)
     
     return {"message": "Extracted competencies from document", "extracted": extracted}

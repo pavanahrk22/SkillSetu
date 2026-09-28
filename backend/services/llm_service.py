@@ -1,6 +1,8 @@
+from config import get_settings
+
 class LLMService:
-    def __init__(self, provider: str = "mock"):
-        self.provider = provider
+    def __init__(self, provider: str = None):
+        self.provider = provider if provider is not None else get_settings().LLM_PROVIDER
         
     async def generate_mcqs(self, text: str, num_questions: int) -> list[dict]:
         return [{"question_text": "Mock?", "option_a": "A", "option_b": "B", "option_c": "C", "option_d": "D", "correct_option": "A", "explanation": "Expl", "difficulty": "medium"}]
@@ -29,17 +31,39 @@ Return ONLY valid JSON — no markdown, no explanation, no preamble. The JSON mu
         if self.provider == "anthropic":
             try:
                 import anthropic
-                client = anthropic.Anthropic()
+                import json
+                settings = get_settings()
+                client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
                 response = client.messages.create(
-                    model="claude-sonnet-4-20250514",
+                    model=settings.ANTHROPIC_MODEL,
                     max_tokens=4096,
                     system=system_prompt,
                     messages=[{"role": "user", "content": f"Generate {num_questions} MCQs from this content:\n\n{content}"}]
                 )
-                import json
-                return json.loads(response.content[0].text)
+                
+                text = response.content[0].text.strip()
+                if text.startswith("```json"):
+                    text = text[7:]
+                elif text.startswith("```"):
+                    text = text[3:]
+                if text.endswith("```"):
+                    text = text[:-3]
+                text = text.strip()
+                
+                parsed = json.loads(text)
+                if not isinstance(parsed, list):
+                    raise ValueError("JSON is not a list")
+                for item in parsed:
+                    if "question" not in item:
+                        raise ValueError("Missing 'question'")
+                    if "options" not in item or not isinstance(item["options"], list) or len(item["options"]) != 4:
+                        raise ValueError("Invalid 'options'")
+                    if "correct_answer_index" not in item or not isinstance(item["correct_answer_index"], int) or not (0 <= item["correct_answer_index"] <= 3):
+                        raise ValueError("Invalid 'correct_answer_index'")
+                
+                return parsed
             except Exception as e:
-                print(f"Claude API error: {e}, falling back to mock")
+                print(f"WARNING: Claude API error or validation failure: {e}. Falling back to mock MCQs.")
         
         # Mock fallback
         return self._mock_mcqs(content, num_questions)

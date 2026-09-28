@@ -15,6 +15,14 @@ def list_courses(db: Session = Depends(get_db)):
     """List all courses."""
     return db.query(Course).all()
 
+<<<<<<< HEAD
+=======
+@router.get("/recommendations", response_model=List[dict])
+async def recommend_courses(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """Recommendations for the logged-in user (delegates to the per-user endpoint)."""
+    return await get_recommendations_for_user(current_user.id, current_user, db)
+
+>>>>>>> 6036b12 (Add taxonomy, admin seed, LLM settings and security fixes (A2-A5))
 @router.get("/recommendations/{user_id}", response_model=List[dict])
 async def get_recommendations_for_user(
     user_id: int,
@@ -22,6 +30,8 @@ async def get_recommendations_for_user(
     db: Session = Depends(get_db)
 ):
     """Semantic course recommendations: embed gap descriptions, cosine-similarity rank against course embeddings, filter completed."""
+    if current_user.role != "admin" and user_id != current_user.id:
+        raise HTTPException(status_code=403, detail="Not authorized")
     from services.gap_analyzer import analyze_gaps
     from services.embeddings_service import EmbeddingsService
 

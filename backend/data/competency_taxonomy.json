@@ -88,5 +88,95 @@
     "name": "Written Communication",
     "domain": "behavioural",
     "description": "Report writing, noting and drafting, statistical report preparation, and official correspondence"
+  },
+  {
+    "id": 16,
+    "name": "Big Data Analytics",
+    "domain": "technical",
+    "description": "Applying big data tools and techniques to process large-scale government and statistical datasets."
+  },
+  {
+    "id": 17,
+    "name": "Census Methodology",
+    "domain": "statistical",
+    "description": "Techniques and frameworks for conducting national census operations efficiently."
+  },
+  {
+    "id": 18,
+    "name": "Change Management",
+    "domain": "behavioural",
+    "description": "Guiding organizational change and adapting to new statistical methods or digital tools."
+  },
+  {
+    "id": 19,
+    "name": "Data Entry & Validation",
+    "domain": "technical",
+    "description": "Ensuring accurate data entry and robust validation processes for statistical data."
+  },
+  {
+    "id": 20,
+    "name": "Ethical Data Handling",
+    "domain": "behavioural",
+    "description": "Understanding and adhering to ethical standards in collecting, processing, and sharing data."
+  },
+  {
+    "id": 21,
+    "name": "Field Investigation Skills",
+    "domain": "statistical",
+    "description": "Conducting on-ground field investigations and primary data collection effectively."
+  },
+  {
+    "id": 22,
+    "name": "GIS & Spatial Analysis",
+    "domain": "technical",
+    "description": "Using Geographic Information Systems for spatial data analysis and mapping."
+  },
+  {
+    "id": 23,
+    "name": "Machine Learning Basics",
+    "domain": "technical",
+    "description": "Understanding basic machine learning concepts and their applications in statistical analysis."
+  },
+  {
+    "id": 24,
+    "name": "National Accounts & GDP Estimation",
+    "domain": "statistical",
+    "description": "Methods and standards for estimating National Accounts and calculating the GDP."
+  },
+  {
+    "id": 25,
+    "name": "Policy Analysis",
+    "domain": "statistical",
+    "description": "Analyzing data to inform and evaluate government policies and initiatives."
+  },
+  {
+    "id": 26,
+    "name": "Project Management",
+    "domain": "behavioural",
+    "description": "Planning, executing, and overseeing statistical and IT projects within the government."
+  },
+  {
+    "id": 27,
+    "name": "Report Writing",
+    "domain": "behavioural",
+    "description": "Drafting clear, concise, and accurate statistical reports for various stakeholders."
+  },
+  {
+    "id": 28,
+    "name": "Stakeholder Management",
+    "domain": "behavioural",
+    "description": "Effectively communicating and collaborating with internal and external stakeholders."
+  },
+  {
+    "id": 29,
+    "name": "Strategic Planning",
+    "domain": "behavioural",
+    "description": "Developing long-term strategies and goals for statistical departments and projects."
+  },
+  {
+    "id": 30,
+    "name": "Teamwork & Collaboration",
+    "domain": "behavioural",
+    "description": "Working collaboratively in diverse teams to achieve shared statistical objectives."
   }
 ]

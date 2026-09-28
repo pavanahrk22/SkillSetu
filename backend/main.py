@@ -74,6 +74,18 @@ def seed_database():
                     ))
                 db.commit()
                 print(f"[SEED] Loaded {len(course_data)} courses from iGOT catalogue.")
+        
+        # Verify job role competencies
+        from app_config.job_roles import JOB_ROLE_REQUIREMENTS
+        comp_names_in_db = {c.name for c in db.query(Competency).all()}
+        missing = set()
+        for role, requirements in JOB_ROLE_REQUIREMENTS.items():
+            for req_comp in requirements.keys():
+                if req_comp not in comp_names_in_db:
+                    missing.add(req_comp)
+        if missing:
+            print(f"WARNING: The following competencies from JOB_ROLE_REQUIREMENTS are missing in the Competency table: {', '.join(missing)}")
+            
     except Exception as e:
         print(f"[SEED ERROR] {e}")
         db.rollback()
