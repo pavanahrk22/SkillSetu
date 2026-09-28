@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LayoutDashboard, Target, BookOpen, FileQuestion, Users, Menu } from 'lucide-react';
+import { LayoutDashboard, Target, BookOpen, FileQuestion, Users } from 'lucide-react';
 import Navbar from './Navbar';
 import { useState } from 'react';
 
@@ -28,7 +28,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <Navbar onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
-      
+
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar */}
         <aside className={`${sidebarOpen ? 'block' : 'hidden'} md:block w-64 bg-white border-r border-slate-200 p-4 transition-all`}>
@@ -41,8 +41,8 @@ const Layout = () => {
                   key={link.name}
                   to={link.path}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
-                    isActive 
-                      ? 'bg-gov-50 text-gov-700 font-semibold' 
+                    isActive
+                      ? 'bg-gov-50 text-gov-700 font-semibold'
                       : 'text-slate-600 hover:bg-slate-50 hover:text-gov-600'
                   }`}
                 >
@@ -57,8 +57,7 @@ const Layout = () => {
         {/* Main Content */}
         <main className="flex-1 overflow-y-auto p-6">
           <div className="max-w-7xl mx-auto">
-            {/* The routed content will appear here via Outlet in App.jsx or children */}
-            <import("react-router-dom").Outlet />
+            <Outlet />
           </div>
         </main>
       </div>
