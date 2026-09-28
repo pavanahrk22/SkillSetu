@@ -1,0 +1,555 @@
+[
+  {
+    "id": 1,
+    "title": "Course on Data visualization dashboards (Part 2)",
+    "description": "Comprehensive training on Data visualization dashboards tailored for government officials.",
+    "competency_tags": [
+      "Data Visualization",
+      "MS Excel & Office Tools"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "MoSPI",
+    "duration_hours": 16,
+    "url": "https://igot.gov.in/course/1"
+  },
+  {
+    "id": 2,
+    "title": "Course on e-Office and digital governance (Part 5)",
+    "description": "Comprehensive training on e-Office and digital governance tailored for government officials.",
+    "competency_tags": [
+      "Digital Governance Tools"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/2"
+  },
+  {
+    "id": 3,
+    "title": "Course on Statistical report writing (Part 1)",
+    "description": "Comprehensive training on Statistical report writing tailored for government officials.",
+    "competency_tags": [
+      "Written Communication",
+      "Basic Statistical Methods"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 4,
+    "url": "https://igot.gov.in/course/3"
+  },
+  {
+    "id": 4,
+    "title": "Course on Statistical report writing (Part 4)",
+    "description": "Comprehensive training on Statistical report writing tailored for government officials.",
+    "competency_tags": [
+      "Written Communication",
+      "Basic Statistical Methods"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "LBSNAA",
+    "duration_hours": 4,
+    "url": "https://igot.gov.in/course/4"
+  },
+  {
+    "id": 5,
+    "title": "Course on SPSS/Stata for government data (Part 5)",
+    "description": "Comprehensive training on SPSS/Stata for government data tailored for government officials.",
+    "competency_tags": [
+      "Statistical Software (R/Python/SPSS)",
+      "Basic Statistical Methods"
+    ],
+    "level": "intermediate",
+    "source": "TPAC",
+    "provider": "ISTM",
+    "duration_hours": 8,
+    "url": "https://tpac.gov.in/course/5"
+  },
+  {
+    "id": 6,
+    "title": "Course on Time series analysis (Part 4)",
+    "description": "Comprehensive training on Time series analysis tailored for government officials.",
+    "competency_tags": [
+      "Advanced Statistical Analysis",
+      "Econometric Modelling"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "MoSPI",
+    "duration_hours": 8,
+    "url": "https://igot.gov.in/course/6"
+  },
+  {
+    "id": 7,
+    "title": "Course on e-Office and digital governance (Part 2)",
+    "description": "Comprehensive training on e-Office and digital governance tailored for government officials.",
+    "competency_tags": [
+      "Digital Governance Tools"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/7"
+  },
+  {
+    "id": 8,
+    "title": "Course on e-Office and digital governance (Part 5)",
+    "description": "Comprehensive training on e-Office and digital governance tailored for government officials.",
+    "competency_tags": [
+      "Digital Governance Tools"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "National e-Governance Academy",
+    "duration_hours": 20,
+    "url": "https://igot.gov.in/course/8"
+  },
+  {
+    "id": 9,
+    "title": "Course on GIS and spatial statistics (Part 3)",
+    "description": "Comprehensive training on GIS and spatial statistics tailored for government officials.",
+    "competency_tags": [
+      "Advanced Statistical Analysis",
+      "Data Visualization"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 8,
+    "url": "https://igot.gov.in/course/9"
+  },
+  {
+    "id": 10,
+    "title": "Course on Sampling theory and design (Part 4)",
+    "description": "Comprehensive training on Sampling theory and design tailored for government officials.",
+    "competency_tags": [
+      "Sampling Techniques",
+      "Survey Design"
+    ],
+    "level": "advanced",
+    "source": "TPAC",
+    "provider": "ISI Kolkata",
+    "duration_hours": 4,
+    "url": "https://tpac.gov.in/course/10"
+  },
+  {
+    "id": 11,
+    "title": "Course on National Accounts (GDP/GVA estimation) (Part 2)",
+    "description": "Comprehensive training on National Accounts (GDP/GVA estimation) tailored for government officials.",
+    "competency_tags": [
+      "Econometric Modelling",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "intermediate",
+    "source": "TPAC",
+    "provider": "IASRI",
+    "duration_hours": 24,
+    "url": "https://tpac.gov.in/course/11"
+  },
+  {
+    "id": 12,
+    "title": "Course on Big data analytics for government (Part 5)",
+    "description": "Comprehensive training on Big data analytics for government tailored for government officials.",
+    "competency_tags": [
+      "Database Management",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "ISI Kolkata",
+    "duration_hours": 16,
+    "url": "https://igot.gov.in/course/12"
+  },
+  {
+    "id": 13,
+    "title": "Course on GIS and spatial statistics (Part 5)",
+    "description": "Comprehensive training on GIS and spatial statistics tailored for government officials.",
+    "competency_tags": [
+      "Advanced Statistical Analysis",
+      "Data Visualization"
+    ],
+    "level": "intermediate",
+    "source": "TPAC",
+    "provider": "MoSPI",
+    "duration_hours": 20,
+    "url": "https://tpac.gov.in/course/13"
+  },
+  {
+    "id": 14,
+    "title": "Course on e-Office and digital governance (Part 5)",
+    "description": "Comprehensive training on e-Office and digital governance tailored for government officials.",
+    "competency_tags": [
+      "Digital Governance Tools"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "NSSTA Mahalanobis",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/14"
+  },
+  {
+    "id": 15,
+    "title": "Course on National Accounts (GDP/GVA estimation) (Part 5)",
+    "description": "Comprehensive training on National Accounts (GDP/GVA estimation) tailored for government officials.",
+    "competency_tags": [
+      "Econometric Modelling",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "LBSNAA",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/15"
+  },
+  {
+    "id": 16,
+    "title": "Course on Statistical report writing (Part 1)",
+    "description": "Comprehensive training on Statistical report writing tailored for government officials.",
+    "competency_tags": [
+      "Written Communication",
+      "Basic Statistical Methods"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "LBSNAA",
+    "duration_hours": 16,
+    "url": "https://igot.gov.in/course/16"
+  },
+  {
+    "id": 17,
+    "title": "Course on R/Python for statistical computing (Part 4)",
+    "description": "Comprehensive training on R/Python for statistical computing tailored for government officials.",
+    "competency_tags": [
+      "Statistical Software (R/Python/SPSS)",
+      "Data Visualization"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "NSSTA Mahalanobis",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/17"
+  },
+  {
+    "id": 18,
+    "title": "Course on e-Office and digital governance (Part 5)",
+    "description": "Comprehensive training on e-Office and digital governance tailored for government officials.",
+    "competency_tags": [
+      "Digital Governance Tools"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "IASRI",
+    "duration_hours": 20,
+    "url": "https://igot.gov.in/course/18"
+  },
+  {
+    "id": 19,
+    "title": "Course on National Accounts (GDP/GVA estimation) (Part 3)",
+    "description": "Comprehensive training on National Accounts (GDP/GVA estimation) tailored for government officials.",
+    "competency_tags": [
+      "Econometric Modelling",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "beginner",
+    "source": "TPAC",
+    "provider": "NIFM",
+    "duration_hours": 20,
+    "url": "https://tpac.gov.in/course/19"
+  },
+  {
+    "id": 20,
+    "title": "Course on SPSS/Stata for government data (Part 2)",
+    "description": "Comprehensive training on SPSS/Stata for government data tailored for government officials.",
+    "competency_tags": [
+      "Statistical Software (R/Python/SPSS)",
+      "Basic Statistical Methods"
+    ],
+    "level": "intermediate",
+    "source": "TPAC",
+    "provider": "ISTM",
+    "duration_hours": 8,
+    "url": "https://tpac.gov.in/course/20"
+  },
+  {
+    "id": 21,
+    "title": "Course on Sampling theory and design (Part 1)",
+    "description": "Comprehensive training on Sampling theory and design tailored for government officials.",
+    "competency_tags": [
+      "Sampling Techniques",
+      "Survey Design"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "TPAC",
+    "duration_hours": 12,
+    "url": "https://igot.gov.in/course/21"
+  },
+  {
+    "id": 22,
+    "title": "Course on Time series analysis (Part 1)",
+    "description": "Comprehensive training on Time series analysis tailored for government officials.",
+    "competency_tags": [
+      "Advanced Statistical Analysis",
+      "Econometric Modelling"
+    ],
+    "level": "advanced",
+    "source": "TPAC",
+    "provider": "ISI Kolkata",
+    "duration_hours": 12,
+    "url": "https://tpac.gov.in/course/22"
+  },
+  {
+    "id": 23,
+    "title": "Course on PFMS, GeM portal training (Part 2)",
+    "description": "Comprehensive training on PFMS, GeM portal training tailored for government officials.",
+    "competency_tags": [
+      "Digital Governance Tools"
+    ],
+    "level": "advanced",
+    "source": "TPAC",
+    "provider": "NSSTA Mahalanobis",
+    "duration_hours": 8,
+    "url": "https://tpac.gov.in/course/23"
+  },
+  {
+    "id": 24,
+    "title": "Course on CPI/WPI index number compilation (Part 1)",
+    "description": "Comprehensive training on CPI/WPI index number compilation tailored for government officials.",
+    "competency_tags": [
+      "Basic Statistical Methods",
+      "Econometric Modelling"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "MoSPI",
+    "duration_hours": 4,
+    "url": "https://igot.gov.in/course/24"
+  },
+  {
+    "id": 25,
+    "title": "Course on Annual Survey of Industries (Part 2)",
+    "description": "Comprehensive training on Annual Survey of Industries tailored for government officials.",
+    "competency_tags": [
+      "Statistical Data Collection",
+      "Database Management"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "MoSPI",
+    "duration_hours": 20,
+    "url": "https://igot.gov.in/course/25"
+  },
+  {
+    "id": 26,
+    "title": "Course on R/Python for statistical computing (Part 3)",
+    "description": "Comprehensive training on R/Python for statistical computing tailored for government officials.",
+    "competency_tags": [
+      "Statistical Software (R/Python/SPSS)",
+      "Data Visualization"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "NIFM",
+    "duration_hours": 20,
+    "url": "https://igot.gov.in/course/26"
+  },
+  {
+    "id": 27,
+    "title": "Course on Big data analytics for government (Part 2)",
+    "description": "Comprehensive training on Big data analytics for government tailored for government officials.",
+    "competency_tags": [
+      "Database Management",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "NIFM",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/27"
+  },
+  {
+    "id": 28,
+    "title": "Course on SPSS/Stata for government data (Part 3)",
+    "description": "Comprehensive training on SPSS/Stata for government data tailored for government officials.",
+    "competency_tags": [
+      "Statistical Software (R/Python/SPSS)",
+      "Basic Statistical Methods"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "National e-Governance Academy",
+    "duration_hours": 24,
+    "url": "https://igot.gov.in/course/28"
+  },
+  {
+    "id": 29,
+    "title": "Course on Leadership for statistical officers (Part 4)",
+    "description": "Comprehensive training on Leadership for statistical officers tailored for government officials.",
+    "competency_tags": [
+      "Leadership & Mentoring"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "NIFM",
+    "duration_hours": 16,
+    "url": "https://igot.gov.in/course/29"
+  },
+  {
+    "id": 30,
+    "title": "Course on National Accounts (GDP/GVA estimation) (Part 2)",
+    "description": "Comprehensive training on National Accounts (GDP/GVA estimation) tailored for government officials.",
+    "competency_tags": [
+      "Econometric Modelling",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 4,
+    "url": "https://igot.gov.in/course/30"
+  },
+  {
+    "id": 31,
+    "title": "Course on Statistical report writing (Part 1)",
+    "description": "Comprehensive training on Statistical report writing tailored for government officials.",
+    "competency_tags": [
+      "Written Communication",
+      "Basic Statistical Methods"
+    ],
+    "level": "advanced",
+    "source": "iGOT",
+    "provider": "TPAC",
+    "duration_hours": 20,
+    "url": "https://igot.gov.in/course/31"
+  },
+  {
+    "id": 32,
+    "title": "Course on Data visualization dashboards (Part 5)",
+    "description": "Comprehensive training on Data visualization dashboards tailored for government officials.",
+    "competency_tags": [
+      "Data Visualization",
+      "MS Excel & Office Tools"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 4,
+    "url": "https://igot.gov.in/course/32"
+  },
+  {
+    "id": 33,
+    "title": "Course on CPI/WPI index number compilation (Part 1)",
+    "description": "Comprehensive training on CPI/WPI index number compilation tailored for government officials.",
+    "competency_tags": [
+      "Basic Statistical Methods",
+      "Econometric Modelling"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "CDAC",
+    "duration_hours": 4,
+    "url": "https://igot.gov.in/course/33"
+  },
+  {
+    "id": 34,
+    "title": "Course on Census operations and methodology (Part 3)",
+    "description": "Comprehensive training on Census operations and methodology tailored for government officials.",
+    "competency_tags": [
+      "Statistical Data Collection",
+      "Sampling Techniques"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "ISI Kolkata",
+    "duration_hours": 20,
+    "url": "https://igot.gov.in/course/34"
+  },
+  {
+    "id": 35,
+    "title": "Course on Data visualization dashboards (Part 3)",
+    "description": "Comprehensive training on Data visualization dashboards tailored for government officials.",
+    "competency_tags": [
+      "Data Visualization",
+      "MS Excel & Office Tools"
+    ],
+    "level": "beginner",
+    "source": "TPAC",
+    "provider": "MoSPI",
+    "duration_hours": 8,
+    "url": "https://tpac.gov.in/course/35"
+  },
+  {
+    "id": 36,
+    "title": "Course on Annual Survey of Industries (Part 5)",
+    "description": "Comprehensive training on Annual Survey of Industries tailored for government officials.",
+    "competency_tags": [
+      "Statistical Data Collection",
+      "Database Management"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "TPAC",
+    "duration_hours": 16,
+    "url": "https://igot.gov.in/course/36"
+  },
+  {
+    "id": 37,
+    "title": "Course on Data visualization dashboards (Part 4)",
+    "description": "Comprehensive training on Data visualization dashboards tailored for government officials.",
+    "competency_tags": [
+      "Data Visualization",
+      "MS Excel & Office Tools"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "National e-Governance Academy",
+    "duration_hours": 8,
+    "url": "https://igot.gov.in/course/37"
+  },
+  {
+    "id": 38,
+    "title": "Course on National Accounts (GDP/GVA estimation) (Part 1)",
+    "description": "Comprehensive training on National Accounts (GDP/GVA estimation) tailored for government officials.",
+    "competency_tags": [
+      "Econometric Modelling",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "intermediate",
+    "source": "iGOT",
+    "provider": "National e-Governance Academy",
+    "duration_hours": 12,
+    "url": "https://igot.gov.in/course/38"
+  },
+  {
+    "id": 39,
+    "title": "Course on Big data analytics for government (Part 4)",
+    "description": "Comprehensive training on Big data analytics for government tailored for government officials.",
+    "competency_tags": [
+      "Database Management",
+      "Advanced Statistical Analysis"
+    ],
+    "level": "beginner",
+    "source": "TPAC",
+    "provider": "MoSPI",
+    "duration_hours": 24,
+    "url": "https://tpac.gov.in/course/39"
+  },
+  {
+    "id": 40,
+    "title": "Course on Census operations and methodology (Part 1)",
+    "description": "Comprehensive training on Census operations and methodology tailored for government officials.",
+    "competency_tags": [
+      "Statistical Data Collection",
+      "Sampling Techniques"
+    ],
+    "level": "beginner",
+    "source": "iGOT",
+    "provider": "NSSTA Mahalanobis",
+    "duration_hours": 16,
+    "url": "https://igot.gov.in/course/40"
+  }
+]

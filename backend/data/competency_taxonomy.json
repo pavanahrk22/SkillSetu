@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Statistical Data Collection",
+    "domain": "statistical",
+    "description": "Methods and techniques for systematic collection of statistical data including census, sample surveys, and administrative data sources"
+  },
+  {
+    "id": 2,
+    "name": "Sampling Techniques",
+    "domain": "statistical",
+    "description": "Design and implementation of probability and non-probability sampling methods including stratified, cluster, and multi-stage sampling"
+  },
+  {
+    "id": 3,
+    "name": "Basic Statistical Methods",
+    "domain": "statistical",
+    "description": "Descriptive statistics, measures of central tendency, dispersion, correlation, regression, and index numbers"
+  },
+  {
+    "id": 4,
+    "name": "Advanced Statistical Analysis",
+    "domain": "statistical",
+    "description": "Time series analysis, multivariate methods, Bayesian statistics, hypothesis testing, and inferential statistics"
+  },
+  {
+    "id": 5,
+    "name": "Econometric Modelling",
+    "domain": "statistical",
+    "description": "Building and validating econometric models for policy analysis, GDP estimation, and economic forecasting"
+  },
+  {
+    "id": 6,
+    "name": "Survey Design",
+    "domain": "technical",
+    "description": "Questionnaire design, survey methodology, pilot testing, and quality assurance for large-scale government surveys like NSSO rounds"
+  },
+  {
+    "id": 7,
+    "name": "Data Visualization",
+    "domain": "technical",
+    "description": "Creating charts, dashboards, and infographics using tools like Tableau, Power BI, or R/Python visualization libraries"
+  },
+  {
+    "id": 8,
+    "name": "Statistical Software (R/Python/SPSS)",
+    "domain": "technical",
+    "description": "Proficiency in statistical computing tools for data analysis, automation, and reproducible research"
+  },
+  {
+    "id": 9,
+    "name": "Database Management",
+    "domain": "technical",
+    "description": "SQL, data warehousing, database design, and management of large government datasets"
+  },
+  {
+    "id": 10,
+    "name": "MS Excel & Office Tools",
+    "domain": "technical",
+    "description": "Advanced Excel (pivot tables, VLOOKUP, macros), Word, PowerPoint for statistical reporting and presentations"
+  },
+  {
+    "id": 11,
+    "name": "Digital Governance Tools",
+    "domain": "digital_governance",
+    "description": "e-Office, PFMS, GeM, government portals, and digital transformation initiatives under Digital India"
+  },
+  {
+    "id": 12,
+    "name": "Data Governance & Privacy",
+    "domain": "digital_governance",
+    "description": "Data protection frameworks, IT Act provisions, statistical confidentiality, and ethical data handling in government"
+  },
+  {
+    "id": 13,
+    "name": "Government Data Standards",
+    "domain": "digital_governance",
+    "description": "National Data Sharing and Accessibility Policy, metadata standards, open data protocols, and interoperability frameworks"
+  },
+  {
+    "id": 14,
+    "name": "Leadership & Mentoring",
+    "domain": "behavioural",
+    "description": "Team leadership, mentoring junior officers, decision-making, and organizational development"
+  },
+  {
+    "id": 15,
+    "name": "Written Communication",
+    "domain": "behavioural",
+    "description": "Report writing, noting and drafting, statistical report preparation, and official correspondence"
+  }
+]
