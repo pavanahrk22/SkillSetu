@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List
 from database import get_db
 from models.user import User, PastTraining
-from models.competency import UserCompetency
+from models.competency import UserCompetency, Competency
 from schemas.user import UserResponse, UserUpdate, PastTrainingCreate, PastTrainingResponse
 from utils.jwt_handler import get_current_user
 from utils.pdf_parser import extract_text_from_pdf
@@ -41,7 +41,12 @@ async def upload_profile_document(file: UploadFile = File(...), current_user: Us
     
     contents = await file.read()
     text = extract_text_from_pdf(contents)
-    extracted = await extract_competencies(text)
+    
+    # Query all Competency rows and serialize to dicts
+    all_competencies = db.query(Competency).all()
+    taxonomy = [{"id": c.id, "name": c.name, "domain": c.domain, "description": c.description, "level": c.level} for c in all_competencies]
+    
+    extracted = await extract_competencies_from_profile(text, taxonomy)
     
     return {"message": "Extracted competencies from document", "extracted": extracted}
 
